@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-scrolled, #header.header-inner-pages {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(255, 255, 255, 0.8);
 }
 
 #header .logo {
@@ -177,7 +177,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a {
   display: block;
   position: relative;
-  color: #fff;
+  color: rgb(0, 0, 0);
   transition: 0.3s;
   font-size: 15px;
   font-family: "Open Sans", sans-serif;
@@ -276,6 +276,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   display: inline-block;
   border: 2px solid #ffc451;
+  margin:1rem
 }
 
 .get-started-btn:hover {
