@@ -18,7 +18,9 @@ body {
 }
 
 .me-card{
-  border-bottom: #052915;
+  /* border-bottom: 1px solid #052915 !important; */
+  /* border-right: 1px solid black !important; */
+  /* border: none; */
 }
 
 .card-header{
