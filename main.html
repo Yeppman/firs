@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Material Design Bootstrap -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/main-chart.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--Navbar -->
+    <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color">
+     <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="https://www.firs.gov.ng/sites/Authoring/imageLibrary/be109fd6-b7f1-44f2-c5e2-e67fa6b55d8alogo.png" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent-333"
+            aria-controls="navbarSupportedContent-333"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tax Statistics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pay Taxes</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Automatic Exchange of Information</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tax Type/Rates</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FIRS Form</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  id="navbarDropdownMenuLink-333"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Dropdown
+                </a>
+                <div
+                  class="dropdown-menu dropdown-default"
+                  aria-labelledby="navbarDropdownMenuLink-333"
+                >
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!--/.Navbar -->
+        <div class="container mt-5 mb-5">
+          <h1> Tax Revenue Collection</h1>
+          <div class="mini-chart">
+            <div class="row">
+              <div class="col-lg-4 col-sm-12 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <canvas id="myChart" width="100" height="100"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <canvas id="myChart2" width="100" height="100"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <canvas id="myChart3" width="100" height="100"></canvas>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+     </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small mdb-color pt-4">
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+        <!-- Footer links -->
+        <div class="row text-center text-md-left mt-3 pb-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">FIRS</h6>
+            <p>
+              Here you can use rows and columns to organize your footer content.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+            <p>
+              <a href="#!">e-Registration</a>
+            </p>
+            <p>
+              <a href="#!">e-Filing
+            </a>
+            </p>
+            <p>
+              <a href="#!">e-Tax Payment
+            </a>
+            </p>
+            <p>
+              <a href="#!">e-Receipt
+            </a>
+            </p>
+            <p>
+                <a>
+                    e-TCC
+                </a>
+            </p>            
+            
+            <p>
+                <p>Helpdesk</p>
+            </p>
+
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+            <p>
+              <a href="#!">National Tax Policy            </a>
+            </p>
+            <p>
+              <a href="#!">Tax Statistics/Reports
+            </a>
+            </p>
+            <p>
+              <a href="#!">Tax Treaties and Related Matters
+            </a>
+            </p>
+            <p>
+              <a href="#!">Transfer Pricing
+            </a>
+            </p>
+            <p>
+                <a href="#!">
+                    Tax Circulars, Regulations and Public Notices
+                </a>
+            </p>
+
+          </div>
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> 20 Sokode Crescent,Wuse Zone 5,Abuja</p>
+            <p><i class="fas fa-envelope mr-3"></i> helpdesk@firs.gov.ng​
+                servicom@firs.gov.ng</p>
+                <p><i class="fas fa-envelope mr-3"></i> 
+                    enquiries@firs.gov.ng​</p>
+                <p><i class="fas fa-envelope mr-3"></i> 
+                        servicom@firs.gov.ng</p>
+            <p><i class="fas fa-phone mr-3"></i> 09074444441
+                09072111111
+                09073777777</p>
+                <p><i class="fas fa-phone mr-3"></i>
+                    09073777777</p>
+                <p><i class="fas fa-print mr-3"></i> 09074444442</p>
+            
+
+
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Footer links -->
+
+        <hr />
+
+        <!-- Grid row -->
+        <div class="row d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8">
+            <!--Copyright-->
+            <p class="text-center text-md-left">
+              © 2020 Copyright:
+              <a href="https://mdbootstrap.com/">
+                <strong> MDBootstrap.com</strong>
+              </a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0">
+            <!-- Social buttons -->
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-google-plus-g"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- JQuery -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <!-- Bootstrap tooltips -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
+    ></script>
+    <!-- Bootstrap core JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"
+    ></script>
+    <!-- MDB core JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"
+    ></script>
+
+    <script>
+      var ctx = document.getElementById("myChart").getContext("2d");
+      var myChart = new Chart(ctx, {
+        type: "pie",
+        data: {
+          labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+          datasets: [
+            {
+              label: "# of Votes",
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                "rgba(255, 99, 132, 0.2)",
+                "rgba(54, 162, 235, 0.2)",
+                "rgba(255, 206, 86, 0.2)",
+                "rgba(75, 192, 192, 0.2)",
+                "rgba(153, 102, 255, 0.2)",
+                "rgba(255, 159, 64, 0.2)",
+              ],
+              borderColor: [
+                "rgba(255, 99, 132, 1)",
+                "rgba(54, 162, 235, 1)",
+                "rgba(255, 206, 86, 1)",
+                "rgba(75, 192, 192, 1)",
+                "rgba(153, 102, 255, 1)",
+                "rgba(255, 159, 64, 1)",
+              ],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            yAxes: [
+              {
+                ticks: {
+                  beginAtZero: true,
+                },
+              },
+            ],
+          },
+        },
+      });
+    </script>
+
+<script>
+    var ctx = document.getElementById("myChart2").getContext("2d");
+    var myChart2 = new Chart(ctx, {
+      type: "line",
+      data: {
+        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        datasets: [
+          {
+            label: "# of Votes",
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+              "rgba(255, 99, 132, 0.2)",
+              "rgba(54, 162, 235, 0.2)",
+              "rgba(255, 206, 86, 0.2)",
+              "rgba(75, 192, 192, 0.2)",
+              "rgba(153, 102, 255, 0.2)",
+              "rgba(255, 159, 64, 0.2)",
+            ],
+            borderColor: [
+              "rgba(255, 99, 132, 1)",
+              "rgba(54, 162, 235, 1)",
+              "rgba(255, 206, 86, 1)",
+              "rgba(75, 192, 192, 1)",
+              "rgba(153, 102, 255, 1)",
+              "rgba(255, 159, 64, 1)",
+            ],
+            borderWidth: 1,
+          },
+        ],
+      },
+      options: {
+        scales: {
+          yAxes: [
+            {
+              ticks: {
+                beginAtZero: true,
+              },
+            },
+          ],
+        },
+      },
+    });
+  </script>
+
+
+<script>
+    var ctx = document.getElementById("myChart3").getContext("2d");
+    var myChart3 = new Chart(ctx, {
+      type: "doughnut",
+      data: {
+        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        datasets: [
+          {
+            label: "# of Votes",
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+              "rgba(255, 99, 132, 0.2)",
+              "rgba(54, 162, 235, 0.2)",
+              "rgba(255, 206, 86, 0.2)",
+              "rgba(75, 192, 192, 0.2)",
+              "rgba(153, 102, 255, 0.2)",
+              "rgba(255, 159, 64, 0.2)",
+            ],
+            borderColor: [
+              "rgba(255, 99, 132, 1)",
+              "rgba(54, 162, 235, 1)",
+              "rgba(255, 206, 86, 1)",
+              "rgba(75, 192, 192, 1)",
+              "rgba(153, 102, 255, 1)",
+              "rgba(255, 159, 64, 1)",
+            ],
+            borderWidth: 1,
+          },
+        ],
+      },
+      options: {
+        scales: {
+          yAxes: [
+            {
+              ticks: {
+                beginAtZero: true,
+              },
+            },
+          ],
+        },
+      },
+    });
+  </script>
+
+<div id='tawk_5ccd362fd07d7e0c6391e169'></div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date(); Tawk_API.embedded='tawk_5ccd362fd07d7e0c6391e169';
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5ccd362fd07d7e0c6391e169/1ehcie6nj';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+</html>

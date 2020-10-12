@@ -1,0 +1,12 @@
+.default-color{
+    background-color: white !important;
+}
+
+.mini-chart{
+    max-width: 100%;
+    max-height: auto;
+}
+
+.nav-link{
+    color: black !important;
+}

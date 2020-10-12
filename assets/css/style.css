@@ -17,6 +17,10 @@ body {
   color: #000270 !important;
 }
 
+.me-card{
+  border-bottom: #052915;
+}
+
 .card-header{
   background-color: #ffffff !important;
 }
