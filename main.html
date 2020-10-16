@@ -93,27 +93,21 @@
           <h1> Tax Collection Report</h1>
           <div class="mini-chart">
             <div class="row">
-              <div class="col-lg-4 col-sm-12 col-md-6">
+              <div class="col-lg-6 col-sm-12 col-md-6">
                 <div class="card">
                     <div class="card-body">
                         <canvas id="myChart" width="100" height="100"></canvas>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-12 col-md-6">
+            <div class="col-lg-6 col-sm-12 col-md-6">
                 <div class="card">
                     <div class="card-body">
                         <canvas id="myChart2" width="100" height="100"></canvas>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-12 col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <canvas id="myChart3" width="100" height="100"></canvas>
-                    </div>
-                </div>
-            </div>
+
             </div>
           </div>
      </div>
@@ -343,7 +337,7 @@
 <script>
     var ctx = document.getElementById("myChart2").getContext("2d");
     var myChart2 = new Chart(ctx, {
-      type: "line",
+      type: "bar",
       data: {
         labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
         datasets: [
@@ -429,18 +423,5 @@
     });
   </script>
 
-<div id='tawk_5ccd362fd07d7e0c6391e169'></div>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date(); Tawk_API.embedded='tawk_5ccd362fd07d7e0c6391e169';
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5ccd362fd07d7e0c6391e169/1ehcie6nj';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);})();
-</script>
-<!--End of Tawk.to Script-->
 </body>
 </html>
